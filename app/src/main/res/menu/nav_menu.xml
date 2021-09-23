@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_movies"
+        android:icon="@drawable/movie"
+        android:title="Movies"
+        app:cnb_iconColor="#03a9f4"/>
+    <item
+        android:id="@+id/nav_tvshows"
+        android:icon="@drawable/tvshows"
+        android:title="Tv Shows"
+        app:cnb_iconColor="#f44336"/>
+
+
 
 </menu>

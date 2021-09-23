@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MoviesFragment">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MOVIES"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
 
 </FrameLayout>
 </layout>
