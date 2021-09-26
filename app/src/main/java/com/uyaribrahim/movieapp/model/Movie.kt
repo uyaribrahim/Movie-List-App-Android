@@ -1,5 +1,7 @@
 package com.uyaribrahim.movieapp.model
 
+import java.io.Serializable
+
 data class Movie(
     var id: Int,
     var title: String?,
@@ -20,6 +22,6 @@ data class Movie(
     var imdbID: Int,
     var imdbRating: Int,
     var imdbVotes: Int,
-    var Response: Boolean,
+    var Response: Boolean
 
-)
+) : Serializable
