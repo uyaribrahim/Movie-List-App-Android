@@ -4,11 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/movie.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/rounded_fg.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/tvshows.xml" value="0.11458333333333333" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/layout/activity_main.xml" value="0.13" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_movies.xml" value="0.22" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_tv_shows.xml" value="0.1331521739130435" />
-        <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/layout/item_movie_tvshow.xml" value="0.2" />
+        <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/layout/item_movie_tvshow.xml" value="0.5" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/MovieApp/app/src/main/res/menu/nav_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
