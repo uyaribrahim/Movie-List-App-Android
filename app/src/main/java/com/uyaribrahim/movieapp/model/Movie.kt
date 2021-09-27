@@ -19,9 +19,9 @@ data class Movie(
     var movieAwards: String?,
     var moviePoster: String?,
     var movieMetaScore: Int,
-    var imdbID: Int,
-    var imdbRating: Int,
-    var imdbVotes: Int,
+    var imdbID: String?,
+    var imdbRating: Double,
+    var imdbVotes: String?,
     var Response: Boolean
 
 ) : Serializable
