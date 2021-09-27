@@ -27,4 +27,9 @@ class MovieAdapter(val movieList: ArrayList<Movie>): RecyclerView.Adapter<MovieA
     override fun getItemCount(): Int {
         return movieList.size
     }
+    fun updateMovieList(newMovieList: List<Movie>){
+        movieList.clear()
+        movieList.addAll(newMovieList)
+        notifyDataSetChanged()
+    }
 }
