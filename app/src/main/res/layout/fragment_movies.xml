@@ -29,7 +29,7 @@
             android:id="@+id/recyclerViewMovie"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#0D0D0D"
+            android:background="@color/black"
             android:layout_marginTop="10dp"
             android:layout_below="@id/moviesTitle">
         </androidx.recyclerview.widget.RecyclerView>
