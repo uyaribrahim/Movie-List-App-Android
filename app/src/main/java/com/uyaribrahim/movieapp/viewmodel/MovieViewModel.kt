@@ -1,13 +1,15 @@
 package com.uyaribrahim.movieapp.viewmodel
 
+import android.content.ContentValues.TAG
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.uyaribrahim.movieapp.model.Movie
 
 class MovieViewModel: ViewModel() {
-    val movies: MutableLiveData<List<Movie>>? = null
-    val movieError: MutableLiveData<Boolean>? = null
-    val movieLoading: MutableLiveData<Boolean>? = null
+    val movies: MutableLiveData<List<Movie>> = MutableLiveData()
+    val movieError: MutableLiveData<Boolean> = MutableLiveData()
+    val movieLoading: MutableLiveData<Boolean> = MutableLiveData()
 
     fun refreshData(){
 
@@ -42,9 +44,12 @@ class MovieViewModel: ViewModel() {
 
         val movieList = arrayListOf<Movie>(movie,movie2,movie3,movie4)
 
-        movies?.value = movieList
-        movieError?.value = false
-        movieLoading?.value = false
+
+
+        movies.value = movieList
+        movieError.value = false
+        movieLoading.value = false
+
 
     }
 
