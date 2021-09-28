@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#0D0D0D">
+    android:background="@color/black">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewMovie"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -24,6 +25,7 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="22dp"
+                android:backgroundTint="@color/black"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintBottom_toTopOf="@+id/movieGenre"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -44,27 +46,30 @@
 
             <TextView
                 android:id="@+id/movieTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_marginBottom="36dp"
                 android:text="Kate"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/movieGenre" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/movieGenre"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="22dp"
+                android:gravity="center"
                 android:text="Action, Adventure, Crime"
-                android:textColor="#606060"
+                android:textColor="#666600"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/cardView"
-                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movieTitle" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
