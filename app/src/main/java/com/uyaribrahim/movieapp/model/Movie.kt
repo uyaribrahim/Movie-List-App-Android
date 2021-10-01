@@ -1,27 +1,32 @@
 package com.uyaribrahim.movieapp.model
 
-import java.io.Serializable
+import com.google.gson.annotations.SerializedName
 
 data class Movie(
-    var id: Int,
-    var title: String?,
-    var movieYear: Int,
-    var movieRated: String?,
-    var movieReleased: String?,
-    var movieRuntime: String?,
-    var movieGenre: String?,
-    var movieDirector: String?,
-    var movieWriter: String?,
-    var movieActors: String?,
-    var moviePlot: String?,
-    var movieLanguage: String?,
-    var movieCountry: String?,
-    var movieAwards: String?,
-    var moviePoster: String?,
-    var movieMetaScore: Int,
-    var imdbID: String?,
-    var imdbRating: Double,
-    var imdbVotes: String?,
-    var Response: Boolean
+    @SerializedName("Title") val movieTitle : String,
+    @SerializedName("Year") val movieYear : Int,
+    @SerializedName("Rated") val movieRated : String,
+    @SerializedName("Released") val movieReleased : String,
+    @SerializedName("Runtime") val movieRuntime : String,
+    @SerializedName("Genre") val movieGenre : String,
+    @SerializedName("Director") val movieDirector : String,
+    @SerializedName("Writer") val movieWriter : String,
+    @SerializedName("Actors") val movieActors : String,
+    @SerializedName("Plot") val moviePlot : String,
+    @SerializedName("Language") val movieLanguage : String,
+    @SerializedName("Country") val movieCountry : String,
+    @SerializedName("Awards") val movieAwards : String,
+    @SerializedName("Poster") val moviePoster : String,
+    @SerializedName("Ratings") val movieRatings : List<Ratings>,
+    @SerializedName("Metascore") val movieMetaScore : Int,
+    @SerializedName("imdbRating") val movieImdbRating : Double,
+    @SerializedName("imdbVotes") val movieImdbVotes : String,
+    @SerializedName("imdbID") val movieImdbId : String,
+    @SerializedName("Type") val movieType : String,
+    @SerializedName("DVD") val movieDVD : String,
+    @SerializedName("BoxOffice") val movieBoxOffice : String,
+    @SerializedName("Production") val movieProductions : String,
+    @SerializedName("Website") val movieWebsite : String,
+    @SerializedName("Response") val movieResponse : Boolean
 
-) : Serializable
+)
