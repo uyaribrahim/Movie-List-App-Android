@@ -26,7 +26,7 @@ class MovieAdapter(val movieList: ArrayList<Movie>): RecyclerView.Adapter<MovieA
     }
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
-        holder.view.movieTitle.text = movieList[position].title
+        holder.view.movieTitle.text = movieList[position].movieTitle
         holder.view.movieGenre.text = movieList[position].movieGenre
 
         Glide.with(holder.view)
