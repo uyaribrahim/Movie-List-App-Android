@@ -51,5 +51,15 @@ class MoviesFragment : Fragment() {
             recyclerViewMovie.visibility = View.VISIBLE
             movieAdapter.updateMovieList(it)
         })
+        viewmodel.movieLoading?.observe(viewLifecycleOwner, Observer {
+            if(it){
+                progressMovieLoading.visibility = View.VISIBLE
+                recyclerViewMovie.visibility = View.GONE
+            }
+            else{
+                progressMovieLoading.visibility = View.GONE
+            }
+
+        })
     }
 }
