@@ -8,7 +8,7 @@ interface MovieAPI {
 
     var API_KEY: String
 
-    @GET("i=tt3896198&apikey=yourapikey")
+    @GET("uyaribrahim/DataSet/main/moviedataset.json")
 
     fun getMovies(): Single<List<Movie>>
 
