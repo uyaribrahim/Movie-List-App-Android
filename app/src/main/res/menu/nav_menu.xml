@@ -10,7 +10,7 @@
     <item
         android:id="@+id/nav_tvshows"
         android:icon="@drawable/tvshows"
-        android:title="Tv Shows"
+        android:title="Tv Series"
         app:cnb_iconColor="#f44336"/>
 
 
