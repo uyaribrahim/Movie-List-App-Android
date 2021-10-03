@@ -1,6 +1,7 @@
 package com.uyaribrahim.movieapp.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.uyaribrahim.movieapp.model.TvSeries
 import com.uyaribrahim.movieapp.service.TvSeriesAPIService
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers.mainThread
@@ -8,7 +9,7 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.observers.DisposableSingleObserver
 import io.reactivex.rxjava3.schedulers.Schedulers.newThread
 
-class TvSeriesViewModel {
+class TvSeriesViewModel: ViewModel() {
 
     val tvSeries: MutableLiveData<List<TvSeries>> = MutableLiveData()
     val tvSeriesError: MutableLiveData<Boolean> = MutableLiveData()

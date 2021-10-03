@@ -23,14 +23,14 @@
                 android:textColor="@color/white"
                 android:layout_marginStart="10dp"
                 />
+
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewMovie"
+                android:id="@+id/recyclerViewTvSeries"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/black"
+                android:layout_below="@id/moviesTitle"
                 android:layout_marginTop="10dp"
-                android:layout_below="@id/moviesTitle">
-            </androidx.recyclerview.widget.RecyclerView>
+                android:background="@color/black"></androidx.recyclerview.widget.RecyclerView>
 
         </RelativeLayout>
 
